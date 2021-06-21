@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<title>Online Shop</title>
+	<link rel="stylesheet"  href="style.css">
+</head>
+<body>
+	<div class="banner">
+		<div class="navbar">
+			<img src="logo.png" class="logo">
+			<ul>
+				<li><a href="homepage.html">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="login.html" class = "active">Login</a></li>
+			</ul>
+		</div>
+		<div class="formbox">
+			<div class="buttonbox">
+				<div id="btn"></div>
+				<button type="button" class="toogle" onclick="login()">Log In</button>
+				<button type="button" class="toogle" onclick="register()">Register</button>
+			</div>
+			<div class="social">
+				<img src="fb.png">
+				<img src="google.png">
+				
+			</div>
+			<form id= "login" class="input">
+				<input type="text" class="input-field" placeholder="User ID" required>
+				<input type="text" class="input-field" placeholder="Enter password" required>
+				<input type="checkbox" class="checkbox" <span>Remember password </span>
+				<button type="submit" class="submit-button">Log In</button>
+			</form>
+			<form id= "register"class="input">
+				<input type="text" class="input-field" placeholder="User ID" required>
+				<input type="email" class="input-field" placeholder="Email ID" required>
+				<input type="text" class="input-field" placeholder="Enter password" required>
+				<input type="checkbox" class="checkbox" <span>I agree to the terms and conditions</span>
+				<button type="submit" class="submit-button">Register</button>
+			</form>
+		</div>
+
+			
+		
+	</div>	
+	<script>
+		var x = document.getElementById("login")
+		var y = document.getElementById("register")
+		var z = document.getElementById("btn")
+		function register(){
+			x.style.left = "-400px"
+			y.style.left = "50px"
+			z.style.left = "110px"
+		}
+		function login(){
+			x.style.left = "50px"
+			y.style.left = "450px"
+			z.style.left = "0px"
+		}
+
+
+	</script>
+
+</body>
+</html>
